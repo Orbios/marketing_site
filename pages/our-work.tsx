@@ -1,6 +1,8 @@
 import type {NextPage} from 'next';
 import Link from 'next/link';
 
+import WorkComponent from 'components/our_work/WorkComponent';
+
 const OurWork: NextPage = () => {
   return (
     <div>
@@ -68,140 +70,89 @@ const OurWork: NextPage = () => {
       <section className="ftco-section">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
-                <div className="img" style={{backgroundImage: 'url(images/work-1.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Branding, Printing</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                <div className="img" style={{backgroundImage: 'url(images/work-2.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Graphic Design</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-                <div className="img" style={{backgroundImage: 'url(images/work-3.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                <div className="img" style={{backgroundImage: 'url(images/work-4.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Branding, Printing"
+              imgSrc="work-1.jpg"
+              delay={100}
+            />
 
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
-                <div className="img" style={{backgroundImage: 'url(images/work-5.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Branding, Printing</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                <div className="img" style={{backgroundImage: 'url(images/work-6.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Graphic Design</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-                <div className="img" style={{backgroundImage: 'url(images/work-7.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                <div className="img" style={{backgroundImage: 'url(images/work-8.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Graphic Design"
+              imgSrc="work-2.jpg"
+              delay={200}
+            />
 
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
-                <div className="img" style={{backgroundImage: 'url(images/work-9.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Branding, Printing</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                <div className="img" style={{backgroundImage: 'url(images/work-10.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Graphic Design</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
-                <div className="img" style={{backgroundImage: 'url(images/work-11.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
-              <div className="work-wrap" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                <div className="img" style={{backgroundImage: 'url(images/work-12.jpg)'}}></div>
-                <div className="text">
-                  <span className="category">Web Development</span>
-                  <h3>
-                    <a href="#">High Quality Design Concept</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-3.jpg"
+              delay={300}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-4.jpg"
+              delay={400}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Branding, Printing"
+              imgSrc="work-5.jpg"
+              delay={100}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Graphic Design"
+              imgSrc="work-6.jpg"
+              delay={200}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-7.jpg"
+              delay={300}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-8.jpg"
+              delay={400}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Branding, Printing"
+              imgSrc="work-9.jpg"
+              delay={100}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Graphic Design"
+              imgSrc="work-10.jpg"
+              delay={200}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-11.jpg"
+              delay={300}
+            />
+
+            <WorkComponent
+              title="High Quality Design Concept"
+              category="Web Development"
+              imgSrc="work-12.jpg"
+              delay={400}
+            />
           </div>
           <div className="row mt-5">
             <div className="col text-center">
