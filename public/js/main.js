@@ -2,7 +2,7 @@
 
 	"use strict";
 
-	AOS.init({
+	AOS?.init({
 		ease: 'slide',
 		once: true
 	});
