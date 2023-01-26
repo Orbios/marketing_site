@@ -1,15 +1,12 @@
 import type {NextPage} from 'next';
 import Link from 'next/link';
 
-import Navigation from 'components/common/Navigation';
-import Footer from 'components/common/Footer';
+import Layout from 'components/common/Layout';
 import WorkComponent from 'components/our_work/WorkComponent';
 
 const OurWork: NextPage = () => {
   return (
-    <div>
-      <Navigation />
-
+    <Layout>
       <section className="hero-wrap hero-wrap-2">
         <div className="overlay"></div>
         <div className="container">
@@ -176,9 +173,7 @@ const OurWork: NextPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 

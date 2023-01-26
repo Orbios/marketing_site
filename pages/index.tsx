@@ -1,14 +1,10 @@
 import type {NextPage} from 'next';
-import Link from 'next/link';
 
-import Navigation from 'components/common/Navigation';
-import Footer from 'components/common/Footer';
+import Layout from 'components/common/Layout';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <Navigation />
-
+    <Layout>
       <section className="hero-wrap">
         <div className="overlay"></div>
         <div className="container">
@@ -284,9 +280,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 };
 
