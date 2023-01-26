@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import config from 'config';
+
 function Footer() {
   return (
     <footer className="ftco-footer">
@@ -137,7 +139,7 @@ function Footer() {
                   <li>
                     <a href="#">
                       <span className="icon fa fa-paper-plane"></span>
-                      <span className="text">info@yourdomain.com</span>
+                      <span className="text">{config.socialMedia.email}</span>
                     </a>
                   </li>
                 </ul>
