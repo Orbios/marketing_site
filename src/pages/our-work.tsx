@@ -1,6 +1,8 @@
 import type {NextPage} from 'next';
 import Link from 'next/link';
 
+import config from 'config';
+
 import Layout from 'components/common/Layout';
 import WorkComponent from 'components/our_work/WorkComponent';
 
@@ -34,17 +36,19 @@ const OurWork: NextPage = () => {
         <div className="container-fluid">
           <div className="row">
             <WorkComponent
-              title="High Quality Design Concept"
-              category="Branding, Printing"
-              imgSrc="work-1.jpg"
+              title="Movies List"
+              category="Front End"
+              imgSrc="movies-list.png"
               delay={100}
+              url={config.works.movieList}
             />
 
             <WorkComponent
-              title="High Quality Design Concept"
-              category="Graphic Design"
+              title="Nabatik Map Demo"
+              category="Full Stack"
               imgSrc="work-2.jpg"
               delay={200}
+              url={config.works.nabatik}
             />
 
             <WorkComponent
