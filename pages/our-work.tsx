@@ -1,49 +1,14 @@
 import type {NextPage} from 'next';
 import Link from 'next/link';
 
+import Navigation from 'components/common/Navigation';
 import Footer from 'components/common/Footer';
 import WorkComponent from 'components/our_work/WorkComponent';
 
 const OurWork: NextPage = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg  ftco-navbar-light">
-        <div className="container-xl">
-          <Link href="/" passHref>
-            <a className="navbar-brand" href="#">
-              Orbios.
-            </a>
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span className="fa fa-bars"></span> Menu
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link href="/" passHref>
-                  <a className="nav-link" href="#">
-                    Home
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/our-work" passHref>
-                  <a className="nav-link active" href="#">
-                    Our Work
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       <section className="hero-wrap hero-wrap-2">
         <div className="overlay"></div>
