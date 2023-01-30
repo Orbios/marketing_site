@@ -1,28 +1,22 @@
 import type {AppProps} from 'next/app';
 import {useEffect} from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
 import '../styles/globals.scss';
 
-//TODO use better solution for loading scripts
-const SCRIPTS = ['bootstrap.bundle.min.js', 'tiny-slider.js', 'glightbox.min.js', 'rellax.min.js', 'aos.js', 'main.js'];
-
 function MyApp({Component, pageProps}: AppProps) {
   useEffect(() => {
     const scripts: HTMLScriptElement[] = [];
 
-    SCRIPTS.forEach((scriptName: string) => {
-      const script = document.createElement('script');
+    const script = document.createElement('script');
 
-      script.src = `../js/${scriptName}`;
-      script.async = true;
+    script.src = '../js/main.js';
+    script.async = true;
 
-      document.body.appendChild(script);
-      scripts.push(script);
-    });
+    document.body.appendChild(script);
+    scripts.push(script);
 
     return () => {
       scripts.forEach(script => {
