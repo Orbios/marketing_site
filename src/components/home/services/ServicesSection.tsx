@@ -59,11 +59,6 @@ function ServicesSection() {
                     frequent changes in requirements during the early stages of development. Our focus on quick
                     development speed makes us a top choice for startups seeking to launch their projects efficiently.
                   </p>
-                  <p>
-                    <a href="#" className="btn btn-secondary">
-                      Our Services
-                    </a>
-                  </p>
                 </div>
               </div>
 

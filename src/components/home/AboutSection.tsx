@@ -30,11 +30,6 @@ function AboutSection() {
                 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                 paradisematic country, in which roasted parts of sentences fly into your mouth.
               </p>
-              <p>
-                <a href="#" className="btn btn-primary">
-                  More About us
-                </a>
-              </p>
             </div>
           </div>
         </div>

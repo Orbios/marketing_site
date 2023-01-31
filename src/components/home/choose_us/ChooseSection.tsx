@@ -1,3 +1,5 @@
+import FEATURES from 'constants/features';
+
 import ChooseItem from './components/ChooseItem';
 
 function ChooseSection() {
@@ -53,19 +55,21 @@ function ChooseSection() {
           })}
         </div>
 
-        <div
-          className="row justify-content-center mt-md-5 mt-4"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          data-aos-duration="1000">
-          <div className="col-md-8">
-            <p>
-              It is essential that the initial version of the project is well-written and easy to maintain so that when
-              the project grows later it stays in good shape. Our handover process to a new team ensures technical
-              success as the project grows and evolves.
-            </p>
+        {FEATURES.DISPLAY_CHOOSE_SECTION_FOOTER && (
+          <div
+            className="row justify-content-center mt-md-5 mt-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000">
+            <div className="col-md-8">
+              <p>
+                It is essential that the initial version of the project is well-written and easy to maintain so that
+                when the project grows later it stays in good shape. Our handover process to a new team ensures
+                technical success as the project grows and evolves.
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
