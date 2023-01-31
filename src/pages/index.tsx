@@ -4,6 +4,7 @@ import Layout from 'components/common/Layout';
 import HeroSection from 'components/home/HeroSection';
 import ServicesSection from 'components/home/services/ServicesSection';
 import AboutSection from 'components/home/AboutSection';
+import TeamSection from 'components/home/team/TeamSection';
 
 const Home: NextPage = () => {
   return (
@@ -14,150 +15,7 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      <section className="ftco-section">
-        <div className="container">
-          <div className="row justify-content-center pb-5">
-            <div className="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
-              <span className="subheading">Team</span>
-              <h2 className="mb-3">Our Digital Experts Team</h2>
-              <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove.
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-              <div className="team-wrap">
-                <div className="img" style={{backgroundImage: 'url(images/team-1.jpg)'}}>
-                  <ul className="ftco-social">
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-google-plus"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text">
-                  <h3>Adrian Molises</h3>
-                  <span className="position">CEO, Founder &amp; Developer</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <div className="team-wrap">
-                <div className="img" style={{backgroundImage: 'url(images/team-2.jpg)'}}>
-                  <ul className="ftco-social">
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-google-plus"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text">
-                  <h3>Arthur MaGregor</h3>
-                  <span className="position">CEO, Founder &amp; Developer</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-              <div className="team-wrap">
-                <div className="img" style={{backgroundImage: 'url(images/team-3.jpg)'}}>
-                  <ul className="ftco-social">
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-google-plus"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text">
-                  <h3>Anna Hanzen</h3>
-                  <span className="position">CEO, Founder &amp; Developer</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-              <div className="team-wrap">
-                <div className="img" style={{backgroundImage: 'url(images/team-4.jpg)'}}>
-                  <ul className="ftco-social">
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-google-plus"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="text">
-                  <h3>Brian Wooden</h3>
-                  <span className="position">CEO, Founder &amp; Developer</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TeamSection />
 
       <section className="ftco-section testimony-section bg-light">
         <div className="container-xl">
