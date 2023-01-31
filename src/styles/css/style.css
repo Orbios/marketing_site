@@ -12031,7 +12031,8 @@ textarea.form-control {
   background: #eff2ff;
   margin-bottom: 10px;
 }
-.services .icon span {
+.services .icon span,
+.services .icon svg {
   font-size: 40px;
   line-height: 1.2;
   color: #1fb6fc;
@@ -12067,7 +12068,9 @@ textarea.form-control {
   background: white;
 }
 .services:hover .icon span,
-.services.active .icon span {
+.services.active .icon span,
+.services:hover .icon svg,
+.services.active .icon svg {
   color: #1fb6fc;
 }
 .services:hover .text h2,

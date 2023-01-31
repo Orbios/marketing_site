@@ -1,3 +1,7 @@
+import {GrNode} from 'react-icons/gr';
+import {FaReact, FaFigma} from 'react-icons/fa';
+import {GiTeamIdea} from 'react-icons/gi';
+
 import ServiceCard from './components/ServiceCard';
 
 function ServicesSection() {
@@ -5,19 +9,19 @@ function ServicesSection() {
     {
       title: 'Back-end Development',
       description: '<b>NodeJS</b> with <b>PostgreSQL</b>, <b>MongoDB</b> storage with cloud deployment',
-      icon: 'flaticon-user',
+      icon: <GrNode />,
       delay: 100
     },
     {
       title: 'Front-end Development',
       description: 'We use <b>ReactJS</b> with <b>TypeScript</b> and <b>NextJS</b>, optionally can use VueJS',
-      icon: 'flaticon-seo',
+      icon: <FaReact />,
       delay: 200
     },
     {
       title: 'UI/UX Design',
       description: 'Deliver custom <b>figma</b> designs for your project',
-      icon: 'flaticon-vector',
+      icon: <FaFigma />,
       delay: 300
     },
     {
@@ -35,7 +39,7 @@ function ServicesSection() {
     {
       title: 'Consulting',
       description: 'Help to <b>choose</b> the best <b>tech stack</b> for your project and organize development process',
-      icon: 'flaticon-rocket',
+      icon: <GiTeamIdea />,
       delay: 400
     }
   ];
