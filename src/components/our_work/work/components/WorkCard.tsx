@@ -1,15 +1,15 @@
-import * as styled from './WorkComponent.styled';
+import * as styled from './WorkCard.styled';
 
 interface Props {
   title: string;
   category: string;
-  imgSrc: string;
+  image: string;
   delay: number;
   url?: string;
 }
 
-function WorkComponent({title, category, imgSrc, delay, url}: Props) {
-  const backgroundImage = `url(images/our_work/${imgSrc})`;
+function WorkCard({title, category, image, delay, url}: Props) {
+  const backgroundImage = `url(images/our_work/${image})`;
 
   function openLink() {
     if (!url) return;
@@ -31,4 +31,4 @@ function WorkComponent({title, category, imgSrc, delay, url}: Props) {
   );
 }
 
-export default WorkComponent;
+export default WorkCard;

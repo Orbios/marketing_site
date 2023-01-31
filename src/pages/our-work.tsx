@@ -1,10 +1,8 @@
 import type {NextPage} from 'next';
 import Link from 'next/link';
 
-import config from 'config';
-
 import Layout from 'components/common/Layout';
-import WorkComponent from 'components/our_work/WorkComponent';
+import WorkSection from 'components/our_work/work/WorkSection';
 
 const OurWork: NextPage = () => {
   return (
@@ -32,97 +30,7 @@ const OurWork: NextPage = () => {
         </div>
       </section>
 
-      <section className="ftco-section">
-        <div className="container-fluid">
-          <div className="row">
-            <WorkComponent
-              title="Movies List"
-              category="Front End"
-              imgSrc="movies-list.png"
-              delay={100}
-              url={config.works.movieList}
-            />
-
-            <WorkComponent
-              title="Nabatik Map Demo"
-              category="Full Stack"
-              imgSrc="work-2.jpg"
-              delay={200}
-              url={config.works.nabatik}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-3.jpg"
-              delay={300}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-4.jpg"
-              delay={400}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Branding, Printing"
-              imgSrc="work-5.jpg"
-              delay={100}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Graphic Design"
-              imgSrc="work-6.jpg"
-              delay={200}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-7.jpg"
-              delay={300}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-8.jpg"
-              delay={400}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Branding, Printing"
-              imgSrc="work-9.jpg"
-              delay={100}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Graphic Design"
-              imgSrc="work-10.jpg"
-              delay={200}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-11.jpg"
-              delay={300}
-            />
-
-            <WorkComponent
-              title="High Quality Design Concept"
-              category="Web Development"
-              imgSrc="work-12.jpg"
-              delay={400}
-            />
-          </div>
-        </div>
-      </section>
+      <WorkSection />
     </Layout>
   );
 };
