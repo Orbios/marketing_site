@@ -1,5 +1,7 @@
 import type {NextPage} from 'next';
 
+import FEATURES from 'constants/features';
+
 import Layout from 'components/common/Layout';
 import HeroSection from 'components/home/HeroSection';
 import ServicesSection from 'components/home/services/ServicesSection';
@@ -17,9 +19,9 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      <TeamSection />
-
-      <TestimonialSection />
+      {FEATURES.DISPLAY_MEMBERS_SECTION && <TeamSection />}
+      
+      {FEATURES.DISPLAY_TESTIMONIAL_SECTION && <TestimonialSection />}
 
       <ChooseSection />
     </Layout>
