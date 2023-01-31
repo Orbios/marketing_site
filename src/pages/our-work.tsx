@@ -121,60 +121,6 @@ const OurWork: NextPage = () => {
               delay={400}
             />
           </div>
-          <div className="row mt-5">
-            <div className="col text-center">
-              <div className="block-27">
-                <ul>
-                  <li>
-                    <a href="#">&lt;</a>
-                  </li>
-                  <li className="active">
-                    <span>1</span>
-                  </li>
-                  <li>
-                    <a href="#">2</a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">4</a>
-                  </li>
-                  <li>
-                    <a href="#">5</a>
-                  </li>
-                  <li>
-                    <a href="#">&gt;</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="ftco-intro py-5 bg-primary">
-        <div className="container">
-          <div className="row d-flex justify-content-center">
-            <div className="col-lg-10">
-              <div className="row g-lg-5">
-                <div className="col-md-7 text-lg-right">
-                  <h2 className="mb-0">Newsletter - Stay tune and get the latest update</h2>
-                  <p>Far far away, behind the word mountains</p>
-                </div>
-                <div className="col-md-5 border-left d-flex align-items-center">
-                  <form action="#" className="subscribe-form">
-                    <div className="form-group d-flex align-items-center">
-                      <input type="text" className="form-control" placeholder="Enter email address" />
-                      <a href="#" className="btn-icon">
-                        <span className="fa fa-paper-plane"></span>
-                      </a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </Layout>
