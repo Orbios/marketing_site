@@ -49,6 +49,11 @@ function Footer() {
               )}
             </div>
           </div>
+
+          <div className="col-md-6 col-lg-2" />
+
+          <div className="col-md-6 col-lg" />
+
           <div className="col-md-6 col-lg-2">
             <div className="ftco-footer-widget mb-4">
               <h2 className="ftco-heading-2">Explore</h2>

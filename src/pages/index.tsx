@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <AboutSection />
 
       {FEATURES.DISPLAY_MEMBERS_SECTION && <TeamSection />}
-      
+
       {FEATURES.DISPLAY_TESTIMONIAL_SECTION && <TestimonialSection />}
 
       <ChooseSection />

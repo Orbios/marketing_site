@@ -25,55 +25,55 @@ function WorkSection() {
       delay: 300
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-1',
       category: 'Web Development',
       image: 'work-4.jpg',
       delay: 400
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-2',
       category: 'Web Development',
       image: 'work-5.jpg',
       delay: 100
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-3',
       category: 'Web Development',
       image: 'work-6.jpg',
       delay: 200
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-4',
       category: 'Web Development',
       image: 'work-7.jpg',
       delay: 300
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-5',
       category: 'Web Development',
       image: 'work-8.jpg',
       delay: 400
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-6',
       category: 'Web Development',
       image: 'work-9.jpg',
       delay: 100
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-7',
       category: 'Web Development',
       image: 'work-10.jpg',
       delay: 200
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-8',
       category: 'Web Development',
       image: 'work-11.jpg',
       delay: 300
     },
     {
-      title: 'High Quality Design Concept',
+      title: 'High Quality Design Concept-9',
       category: 'Web Development',
       image: 'work-12.jpg',
       delay: 400
