@@ -1,65 +1,12 @@
 import type {NextPage} from 'next';
 
-import FEATURES from 'constants/features';
-
-import mailHelper from 'helpers/mailHelper';
-
 import Layout from 'components/common/Layout';
+import HeroSection from 'components/home/HeroSection';
 
 const Home: NextPage = () => {
-  function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-    e.preventDefault();
-    mailHelper.sendMail();
-  }
-
   return (
     <Layout>
-      <section className="hero-wrap">
-        <div className="overlay"></div>
-        <div className="container">
-          <div className="row no-gutters slider-text align-items-center justify-content-between align-items-stretch">
-            <div className="col-md-6 col-lg-5 text d-flex align-items-center">
-              <div>
-                <h1 className="">Orbios - harmonical grows of your project.</h1>
-                <p>Accelerating Startup Success through flexible and effective Software Solutions</p>
-                <p className="d-flex">
-                  <a href="#" className="btn btn-primary d-flex align-items-center" onClick={sendEmail}>
-                    <span>Contact Us</span>
-                  </a>
-                </p>
-
-                {FEATURES.DISPLAY_SOCIAL_MEDIA && (
-                  <ul className="ftco-social">
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-twitter"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-facebook"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-instagram"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <span className="fa fa-google-plus"></span>
-                      </a>
-                    </li>
-                  </ul>
-                )}
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-7 svg d-flex align-items-center">
-              <img src="images/bg_1.svg" className="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       <section className="ftco-section ftco-no-pb">
         <div className="container mb-md-4">
