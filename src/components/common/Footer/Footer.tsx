@@ -1,8 +1,14 @@
 import Link from 'next/link';
 
 import config from 'config';
+import mailHelper from 'helpers/mailHelper';
 
 function Footer() {
+  function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    mailHelper.sendMail();
+  }
+
   return (
     <footer className="ftco-footer">
       <div className="container-xl">
@@ -137,7 +143,7 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" onClick={sendEmail}>
                       <span className="icon fa fa-paper-plane"></span>
                       <span className="text">{config.socialMedia.email}</span>
                     </a>

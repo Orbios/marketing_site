@@ -1,8 +1,15 @@
 import type {NextPage} from 'next';
 
+import mailHelper from 'helpers/mailHelper';
+
 import Layout from 'components/common/Layout';
 
 const Home: NextPage = () => {
+  function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    e.preventDefault();
+    mailHelper.sendMail();
+  }
+
   return (
     <Layout>
       <section className="hero-wrap">
@@ -11,14 +18,11 @@ const Home: NextPage = () => {
           <div className="row no-gutters slider-text align-items-center justify-content-between align-items-stretch">
             <div className="col-md-6 col-lg-5 text d-flex align-items-center">
               <div>
-                <h1 className="">Boost Personal Productivity</h1>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h1 className="">Orbios - harmonical grows of your project.</h1>
+                <p>Accelerating Startup Success through flexible and effective Software Solutions</p>
                 <p className="d-flex">
-                  <a href="#" className="btn btn-primary d-flex align-items-center">
-                    <span>Start A Project</span>
-                  </a>
-                  <a href="#" className="btn btn-secondary">
-                    <span className="call">Call us for any inquiry</span> <span>+01 2345 5678 910</span>
+                  <a href="#" className="btn btn-primary d-flex align-items-center" onClick={sendEmail}>
+                    <span>Contact Us</span>
                   </a>
                 </p>
 
