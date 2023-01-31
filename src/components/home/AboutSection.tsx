@@ -21,9 +21,10 @@ function AboutSection() {
               <span className="subheading">About Us</span>
               <h2 className="mb-4">Orbios - harmonical grows of your project.</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                ocean.
+                With years of experience in a diverse range of projects, we have sharpened our ability to choose the
+                best tools for the job. Our approach strikes a balance between code quality and a flexible, fast
+                development cycle. We utilize pre-defined project templates and basic infrastructure to ensure an
+                efficient start to every project.
               </p>
               <p>
                 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a

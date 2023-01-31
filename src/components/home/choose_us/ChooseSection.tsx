@@ -38,10 +38,11 @@ function ChooseSection() {
             data-aos="fade-up"
             data-aos-duration="1000">
             <span className="subheading">Why Choose Us</span>
-            <h2 className="mb-4">Easy Management for Your Businesses</h2>
+            <h2 className="mb-4">Entrust Your MVP creation to Experienced Professionals.</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove.
+              It is essential that the initial version of the project is well-written and easy to maintain so that when
+              the project grows later it stays in good shape. Our handover process to a new team ensures technical
+              success as the project grows and evolves.
             </p>
           </div>
         </div>
@@ -59,8 +60,9 @@ function ChooseSection() {
           data-aos-duration="1000">
           <div className="col-md-8">
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove.
+              It is essential that the initial version of the project is well-written and easy to maintain so that when
+              the project grows later it stays in good shape. Our handover process to a new team ensures technical
+              success as the project grows and evolves.
             </p>
           </div>
         </div>

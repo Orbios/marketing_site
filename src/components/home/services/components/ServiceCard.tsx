@@ -18,7 +18,7 @@ function ServiceCard({title, description, icon, delay}: Props) {
         </div>
         <div className="text">
           <h2>{title}</h2>
-          <p>{description}</p>
+          <p dangerouslySetInnerHTML={{__html: description}}></p>
         </div>
       </a>
     </div>
