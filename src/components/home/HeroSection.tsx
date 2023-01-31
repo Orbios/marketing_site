@@ -2,6 +2,8 @@ import FEATURES from 'constants/features';
 
 import mailHelper from 'helpers/mailHelper';
 
+import commonData from 'data/common.json';
+
 function HeroSection() {
   function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     e.preventDefault();
@@ -17,7 +19,7 @@ function HeroSection() {
           <div className="col-md-6 col-lg-5 text d-flex align-items-center">
             <div>
               <h1 className="">Orbios - harmonical grows of your project.</h1>
-              <p>Accelerating Startup Success through flexible and effective Software Solutions</p>
+              <p>{commonData.orbiosMission}</p>
               <p className="d-flex">
                 <a href="#" className="btn btn-primary d-flex align-items-center" onClick={sendEmail}>
                   <span>Contact Us</span>

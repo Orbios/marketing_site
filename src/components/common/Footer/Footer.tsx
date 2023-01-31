@@ -2,6 +2,8 @@ import Link from 'next/link';
 
 import FEATURES from 'constants/features';
 
+import commonData from 'data/common.json';
+
 import config from 'config';
 import mailHelper from 'helpers/mailHelper';
 
@@ -24,7 +26,7 @@ function Footer() {
                   </a>
                 </Link>
               </h2>
-              <p>Accelerating Startup Success through flexible and effective Software Solutions</p>
+              <p>{commonData.orbiosMission}</p>
 
               {FEATURES.DISPLAY_SOCIAL_MEDIA && (
                 <ul className="ftco-footer-social list-unstyled mt-4">
