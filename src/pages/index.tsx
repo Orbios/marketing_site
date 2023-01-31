@@ -1,5 +1,7 @@
 import type {NextPage} from 'next';
 
+import FEATURES from 'constants/features';
+
 import mailHelper from 'helpers/mailHelper';
 
 import Layout from 'components/common/Layout';
@@ -26,28 +28,30 @@ const Home: NextPage = () => {
                   </a>
                 </p>
 
-                <ul className="ftco-social">
-                  <li>
-                    <a href="#">
-                      <span className="fa fa-twitter"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="fa fa-facebook"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="fa fa-instagram"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span className="fa fa-google-plus"></span>
-                    </a>
-                  </li>
-                </ul>
+                {FEATURES.DISPLAY_SOCIAL_MEDIA && (
+                  <ul className="ftco-social">
+                    <li>
+                      <a href="#">
+                        <span className="fa fa-twitter"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span className="fa fa-facebook"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span className="fa fa-instagram"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span className="fa fa-google-plus"></span>
+                      </a>
+                    </li>
+                  </ul>
+                )}
               </div>
             </div>
             <div className="col-md-6 col-lg-7 svg d-flex align-items-center">

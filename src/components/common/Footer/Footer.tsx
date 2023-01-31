@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import FEATURES from 'constants/features';
+
 import config from 'config';
 import mailHelper from 'helpers/mailHelper';
 
@@ -22,24 +24,27 @@ function Footer() {
                   </a>
                 </Link>
               </h2>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <ul className="ftco-footer-social list-unstyled mt-4">
-                <li>
-                  <a href="#">
-                    <span className="fa fa-twitter"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span className="fa fa-facebook"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <span className="fa fa-instagram"></span>
-                  </a>
-                </li>
-              </ul>
+              <p>Accelerating Startup Success through flexible and effective Software Solutions</p>
+
+              {FEATURES.DISPLAY_SOCIAL_MEDIA && (
+                <ul className="ftco-footer-social list-unstyled mt-4">
+                  <li>
+                    <a href="#">
+                      <span className="fa fa-twitter"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span className="fa fa-facebook"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span className="fa fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+              )}
             </div>
           </div>
           <div className="col-md-6 col-lg-2">
