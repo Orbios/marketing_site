@@ -5,7 +5,6 @@ import mailHelper from 'helpers/mailHelper';
 import commonData from 'data/common.json';
 
 function HeroSection() {
-  console.log('Test ENV variable', process.env.NEXT_PUBLIC_EXAMPLE_KEY);
   function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     e.preventDefault();
     mailHelper.sendMail();
