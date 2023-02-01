@@ -25,7 +25,7 @@ function ProjectsSection() {
       title: 'OptimalShip',
       slogan: 'Intelligent Supply Chain Solutions',
       description:
-        '<b>OptimalShip</b> offers shipping services worldwide utilizing major providers such as DHL Express to provide their customers with the best shipping rates. Our company was responsible for the architecture and development of the front-end application, which streamlines the process of collecting information for international and domestic shipments, managing shipment pickups, and creating shipments automatically through external APIs.',
+        '<b>OptimalShip</b> offers shipping services worldwide utilizing major providers such as DHL Express to provide their customers with the best shipping rates. We were responsible for the architecture and development of the front-end application, which streamlines the process of collecting information for international and domestic shipments, managing shipment pickups, and creating shipments automatically through external APIs.',
       technologies: '<b>Technologies</b>: React, Redux, TypeScript, Rest/GraphQL',
       image: 'optimal_ship.png',
       url: 'https://us.optimalship.com/'
