@@ -1,6 +1,8 @@
 import {GrNode} from 'react-icons/gr';
-import {FaReact, FaFigma} from 'react-icons/fa';
+import {FaReact} from 'react-icons/fa';
 import {GiTeamIdea} from 'react-icons/gi';
+import {RiSlideshowLine} from 'react-icons/ri';
+import {BsGearWideConnected} from 'react-icons/bs';
 
 import ServiceCard from './components/ServiceCard';
 
@@ -21,7 +23,7 @@ function ServicesSection() {
     {
       title: 'UI/UX Design',
       description: 'Deliver custom <b>figma</b> designs for your project',
-      icon: <FaFigma />,
+      icon: <RiSlideshowLine />,
       delay: 300
     },
     {
@@ -33,7 +35,7 @@ function ServicesSection() {
     {
       title: 'Rewrite existing project',
       description: 'We can help you to <b>rewrite</b> your existing project to <b>modern stack</b>',
-      icon: 'flaticon-search-engine',
+      icon: <BsGearWideConnected />,
       delay: 400
     },
     {

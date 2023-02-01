@@ -2,14 +2,14 @@ import type {NextPage} from 'next';
 
 import Layout from 'components/common/Layout';
 import ExploreSection from 'components/our_work/ExploreSection';
-import WorkSection from 'components/our_work/work/WorkSection';
+import ProjectsSection from 'components/our_work/projects/ProjectsSection';
 
 const OurWork: NextPage = () => {
   return (
     <Layout>
       <ExploreSection />
 
-      <WorkSection />
+      <ProjectsSection />
     </Layout>
   );
 };

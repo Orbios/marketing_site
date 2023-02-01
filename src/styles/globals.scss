@@ -710,7 +710,8 @@ textarea.form-control {
     border-radius: 50%;
     background: darken($light, 2%);
     margin-bottom: 10px;
-    span, svg {
+    span,
+    svg {
       font-size: 40px;
       line-height: 1.2;
       color: $primary;
@@ -742,7 +743,8 @@ textarea.form-control {
     }
     .icon {
       background: white;
-      span, svg {
+      span,
+      svg {
         color: $primary;
       }
     }
@@ -803,7 +805,8 @@ textarea.form-control {
       margin: 0 auto;
       margin-bottom: 10px;
       @include transition(0.3s);
-      span, svg {
+      span,
+      svg {
         color: $white;
         font-size: 45px;
       }
@@ -818,7 +821,8 @@ textarea.form-control {
       background: $primary;
       .icon {
         background: $white;
-        span, svg {
+        span,
+        svg {
           color: $primary;
         }
       }
