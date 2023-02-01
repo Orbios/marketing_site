@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import {FiMail} from 'react-icons/fi';
 
 import FEATURES from 'constants/features';
 
@@ -76,7 +77,7 @@ function Footer() {
                 <ul>
                   <li>
                     <a href="#" onClick={sendEmail}>
-                      <span className="icon fa fa-paper-plane"></span>
+                      <FiMail />
                       <span className="text">{config.socialMedia.email}</span>
                     </a>
                   </li>
