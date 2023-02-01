@@ -3,11 +3,14 @@ import FEATURES from 'constants/features';
 import ChooseItem from './components/ChooseItem';
 import {AiOutlineTeam} from 'react-icons/ai';
 import {HiOutlineTemplate} from 'react-icons/hi';
+import {BsSpeedometer} from 'react-icons/bs';
+import {GrTechnology} from 'react-icons/gr';
+import {ImStack} from 'react-icons/im';
 
 function ChooseSection() {
   const reasons = [
     {
-      title: 'Team',
+      title: 'Team of professionals',
       description:
         'Our experienced team has worked together for a long time, ensuring a seamless collaboration and efficient problem-solving. You can trust us to bring your MVP vision to life with expertise and dedication.',
       icon: <AiOutlineTeam />
@@ -19,16 +22,16 @@ function ChooseSection() {
       icon: <HiOutlineTemplate />
     },
     {
-      title: 'Private Community',
+      title: 'Balancing Code Quality and Speed',
       description:
-        'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      icon: 'flaticon-secret-file'
+        'Our approach balances the need for high-quality code with a flexible and fast development cycle. We understand the importance of delivering results quickly, especially for startups, while still ensuring a robust and maintainable codebase. ',
+      icon: <BsSpeedometer />
     },
     {
-      title: '24/7 Help Support',
+      title: 'Technology Stack',
       description:
-        'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      icon: 'flaticon-help'
+        'We carefully select the right tools for each job to ensure optimal results. Our technology stack is based on common practices and industry standards, making it easy for future team members to maintain and evolve the project.',
+      icon: <ImStack />
     }
   ];
 
