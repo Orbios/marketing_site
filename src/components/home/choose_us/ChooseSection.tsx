@@ -1,20 +1,22 @@
 import FEATURES from 'constants/features';
 
 import ChooseItem from './components/ChooseItem';
+import {AiOutlineTeam} from 'react-icons/ai';
+import {HiOutlineTemplate} from 'react-icons/hi';
 
 function ChooseSection() {
   const reasons = [
     {
-      title: 'Easy Management',
+      title: 'Team',
       description:
-        'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      icon: 'flaticon-settings'
+        'Our experienced team has worked together for a long time, ensuring a seamless collaboration and efficient problem-solving. You can trust us to bring your MVP vision to life with expertise and dedication.',
+      icon: <AiOutlineTeam />
     },
     {
-      title: 'Protect Your Profile',
+      title: 'Project Templates',
       description:
-        'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      icon: 'flaticon-padlock'
+        'Our pre-defined project templates come with a pre-built infrastructure, including authentication, UI framework, database access, and more. This saves time and resources in the early stages of development, allowing us to focus on customizing the project to meet your specific needs.',
+      icon: <HiOutlineTemplate />
     },
     {
       title: 'Private Community',
