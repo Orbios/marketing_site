@@ -8,7 +8,7 @@ function AboutSection() {
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="1000">
-            <picture>
+            <picture id="about-image-wrapper">
               <img src="images/about.svg" className="img-fluid" alt="" />
             </picture>
           </div>

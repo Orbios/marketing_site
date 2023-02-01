@@ -1934,3 +1934,23 @@ textarea.form-control {
     }
   }
 }
+
+//custom styles
+
+#about-image-wrapper {
+  margin-left: -100px;
+
+  @media screen and (max-width: 1400px) {
+    margin-left: 0;
+  }
+}
+
+#hero-image-wrapper {
+  margin-right: -100px;
+  margin-left: 100px;
+
+  @media screen and (max-width: 1400px) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

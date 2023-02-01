@@ -44,11 +44,10 @@ function ProjectItem({index, title, slogan, description, technologies, image, ur
           <p dangerouslySetInnerHTML={{__html: description}} />
           <p dangerouslySetInnerHTML={{__html: technologies}} />
           <p>
-            Find out more about <b>{title}</b>{' '}
+            Find out more about{' '}
             <a href={url} target="_blank" rel="noreferrer">
-              here
+              {title}
             </a>
-            .
           </p>
         </div>
       </div>
