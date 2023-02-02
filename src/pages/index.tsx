@@ -1,6 +1,5 @@
 import type {NextPage} from 'next';
-
-import FEATURES from 'constants/features';
+import {useRouter} from 'next/router';
 
 import Layout from 'components/common/Layout';
 import HeroSection from 'components/home/HeroSection';
@@ -11,6 +10,13 @@ import TestimonialSection from 'components/home/testimonial/TestimonialSection';
 import ChooseSection from 'components/home/choose_us/ChooseSection';
 
 const Home: NextPage = () => {
+  const router = useRouter();
+
+  const {team, testimonial} = router.query;
+
+  const displayMembersSection = team !== undefined;
+  const displayTestimonialSection = testimonial !== undefined;
+
   return (
     <Layout>
       <HeroSection />
@@ -19,9 +25,9 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      {FEATURES.DISPLAY_MEMBERS_SECTION && <TeamSection />}
+      {displayMembersSection && <TeamSection />}
 
-      {FEATURES.DISPLAY_TESTIMONIAL_SECTION && <TestimonialSection />}
+      {displayTestimonialSection && <TestimonialSection />}
 
       <ChooseSection />
     </Layout>

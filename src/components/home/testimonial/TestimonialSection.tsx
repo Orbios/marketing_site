@@ -49,7 +49,7 @@ function TestimonialSection() {
           <div className="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div className="carousel-testimony">
               {testimonials.map(testimonial => {
-                return <TestimonialItem key={testimonial.person} {...testimonial} />;
+                return <TestimonialItem key={testimonial.image} {...testimonial} />;
               })}
             </div>
           </div>
