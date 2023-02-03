@@ -6,18 +6,27 @@ function TeamSection() {
       name: 'Erik Sytnyk',
       position: 'Founder & Lead Developer',
       image: 'team/erik.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/erik-sytnyk/'
+      },
       delay: 100
     },
     {
       name: 'Andrey Temchenko',
       position: 'Lead Full Stack Developer',
       image: 'team/andrey.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/andrew-temchenko-75b8941a2/'
+      },
       delay: 200
     },
     {
       name: 'Tetyana Yaburova',
       position: 'Sales & Marketing',
       image: 'team/tanya.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/tetyana-yaburova-ovcharenko-971b1062/'
+      },
       delay: 300
     }
   ];
