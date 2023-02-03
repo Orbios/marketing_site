@@ -1,12 +1,19 @@
+import * as styled from './TestimonialItem.styled';
+
 interface Props {
   person: string;
   position: string;
   image: string;
+  links: {linkedIn: string};
   feedback: string;
 }
 
-function TestimonialItem({person, position, image, feedback}: Props) {
+function TestimonialItem({person, position, image, links, feedback}: Props) {
   const backgroundImage = `url(images/${image})`;
+
+  function openLinkedIn() {
+    window.open(links.linkedIn, '_blank');
+  }
 
   return (
     <div className="item">
@@ -17,9 +24,12 @@ function TestimonialItem({person, position, image, feedback}: Props) {
         <div className="text">
           <p className="mb-4 msg">{feedback}</p>
           <div className="d-flex align-items-center">
-            <div className="user-img" style={{backgroundImage}}></div>
+            <styled.clientImage className="user-img" style={{backgroundImage}} onClick={openLinkedIn} />
+
             <div className="ps-3 tx">
-              <p className="name">{person}</p>
+              <styled.clientName className="name" onClick={openLinkedIn}>
+                {person}
+              </styled.clientName>
               <span className="position">{position}</span>
             </div>
           </div>

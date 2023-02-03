@@ -6,13 +6,19 @@ function TestimonialSection() {
       person: 'Hans Lee',
       position: 'CTO at Freedom Robotics',
       image: 'clients/hans.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/hansclee/'
+      },
       feedback:
-        'Erik from orbios has built the front-end our platform from a basic demo to a fully functioning and scalable MVP and then led development of many of the key features we now have in our mature version. He did a great job, where he took initiative when we were small, worked with other developers as we scaled to increase code quality and always had a good balance of development speed and quality. He is very competent in front-end development, ui/ux, react, etc'
+        'Erik from orbios has built the front-end our platform from a basic demo to a fully functioning and scalable MVP and then led development of many of the key features we now have in our mature version. He did a great job, where he took initiative when we were small, worked with other developers as we scaled to increase code quality and always had a good balance of development speed and quality. He is very competent in front-end development, ui/ux, react, etc.'
     },
     {
       person: 'Mike Mack',
       position: 'CEO at Fract',
       image: 'clients/mike.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/mikedude/'
+      },
       feedback:
         "Orbios truly exceeded our expectations. Their team of experts flawlessly redesigned and rebuilt our enterprise-level stack, enabling a seamless transition to the new system with zero downtime. The project was expertly managed and the team's innovative ideas for incorporating new technologies were invaluable. We are beyond grateful for the work that Orbios has done for us and couldn't be happier with the results."
     }
