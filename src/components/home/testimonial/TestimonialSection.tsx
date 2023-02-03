@@ -3,32 +3,18 @@ import TestimonialItem from './components/TestimonialItem';
 function TestimonialSection() {
   const testimonials = [
     {
-      person: 'Roger Scott',
-      position: 'Marketing Manager',
-      image: 'person_1.jpg',
+      person: 'Hans Lee',
+      position: 'CTO at Freedom Robotics',
+      image: 'clients/hans.jpg',
       feedback:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+        'Erik from orbios has built the front-end our platform from a basic demo to a fully functioning and scalable MVP and then led development of many of the key features we now have in our mature version. He did a great job, where he took initiative when we were small, worked with other developers as we scaled to increase code quality and always had a good balance of development speed and quality. He is very competent in front-end development, ui/ux, react, etc'
     },
     {
-      person: 'Roger Scott',
-      position: 'Marketing Manager',
-      image: 'person_2.jpg',
+      person: 'Mike Mack',
+      position: 'CEO at Fract',
+      image: 'clients/mike.jpg',
       feedback:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
-    },
-    {
-      person: 'Roger Scott',
-      position: 'Marketing Manager',
-      image: 'person_3.jpg',
-      feedback:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
-    },
-    {
-      person: 'Roger Scott',
-      position: 'Marketing Manager',
-      image: 'person_4.jpg',
-      feedback:
-        'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.'
+        "Orbios truly exceeded our expectations. Their team of experts flawlessly redesigned and rebuilt our enterprise-level stack, enabling a seamless transition to the new system with zero downtime. The project was expertly managed and the team's innovative ideas for incorporating new technologies were invaluable. We are beyond grateful for the work that Orbios has done for us and couldn't be happier with the results."
     }
   ];
 
@@ -38,10 +24,11 @@ function TestimonialSection() {
         <div className="row justify-content-center pb-4">
           <div className="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
             <span className="subheading">Testimonial</span>
-            <h2 className="mb-3">Happy Customers</h2>
+            <h2 className="mb-3">Success Stories</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove.
+              Join the ranks of satisfied clients who have trusted us to deliver their MVP vision. Our team of experts
+              specializes in bringing your digital product to life with speed, quality, and affordability. Read on to
+              hear what others have to say about their experience working with us.
             </p>
           </div>
         </div>
