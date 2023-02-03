@@ -12,10 +12,9 @@ import ChooseSection from 'components/home/choose_us/ChooseSection';
 const Home: NextPage = () => {
   const router = useRouter();
 
-  const {team, testimonial} = router.query;
+  const {preview} = router.query;
 
-  const displayMembersSection = team !== undefined;
-  const displayTestimonialSection = testimonial !== undefined;
+  const displayPreviewSections = preview !== undefined;
 
   return (
     <Layout>
@@ -25,9 +24,9 @@ const Home: NextPage = () => {
 
       <AboutSection />
 
-      {displayMembersSection && <TeamSection />}
+      {displayPreviewSections && <TeamSection />}
 
-      {displayTestimonialSection && <TestimonialSection />}
+      {displayPreviewSections && <TestimonialSection />}
 
       <ChooseSection />
     </Layout>
