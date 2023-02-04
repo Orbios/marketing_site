@@ -21,6 +21,16 @@ function TestimonialSection() {
       },
       feedback:
         "Orbios truly exceeded our expectations. Their team of experts flawlessly redesigned and rebuilt our enterprise-level stack, enabling a seamless transition to the new system with zero downtime. The project was expertly managed and the team's innovative ideas for incorporating new technologies were invaluable. We are beyond grateful for the work that Orbios has done for us and couldn't be happier with the results."
+    },
+    {
+      person: 'Krispin Stock',
+      position: 'Product Designer for OptimalShip',
+      image: 'clients/krispin.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/krispin-stock/'
+      },
+      feedback:
+        'As a product designer at OptimalShip, I had the pleasure to work with Erik from Orbios on our shipping services project. From the outset, Erik brought his expertise in front-end development and user-friendly design, effectively implementing complex international shipment regulations to deliver a seamless user experience. The end result was a highly functional and user-friendly application, which has been a huge success. I highly recommend Orbios for any front-end development projects.'
     }
   ];
 
