@@ -16,7 +16,7 @@ function TestimonialItem({person, position, image, links, feedback}: Props) {
   }
 
   return (
-    <div className="item">
+    <styled.wrapper>
       <div className="testimony-wrap">
         <div className="icon d-flex align-items-center justify-content-center">
           <span className="fa fa-quote-left" />
@@ -35,7 +35,7 @@ function TestimonialItem({person, position, image, links, feedback}: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </styled.wrapper>
   );
 }
 

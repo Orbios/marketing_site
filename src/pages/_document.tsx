@@ -9,7 +9,6 @@ export default function Document() {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" />
 
         <script src="/js/bootstrap.bundle.min.js" async />
-        <script src="/js/tiny-slider.js" async />
         <script src="/js/rellax.min.js" async />
         <script src="/js/glightbox.min.js" async />
         <script src="/js/aos.js" async />

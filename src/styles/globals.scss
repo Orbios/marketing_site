@@ -1369,6 +1369,17 @@ textarea.form-control {
     background: $primary;
   }
 }
+
+.carousel-testimony {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 1400px) {
+    justify-content: center;
+  }
+}
+
 .testimony-wrap {
   display: block;
   position: relative;
