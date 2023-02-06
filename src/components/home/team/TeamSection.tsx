@@ -21,6 +21,15 @@ function TeamSection() {
       delay: 200
     },
     {
+      name: 'Leonid Stryzhevskyi',
+      position: 'Back-end develoer & Cloud Architect',
+      image: 'team/leo.jpg',
+      links: {
+        linkedIn: 'https://www.linkedin.com/in/lganzzzo/'
+      },
+      delay: 300
+    },
+    {
       name: 'Tetyana Yaburova',
       position: 'Sales & Marketing',
       image: 'team/tanya.jpg',
