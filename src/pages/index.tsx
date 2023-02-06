@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
       <TeamSection />
 
-      {displayPreviewSections && <TestimonialSection />}
+      <TestimonialSection />
 
       <ChooseSection />
     </Layout>
