@@ -22,7 +22,7 @@ function TeamSection() {
     },
     {
       name: 'Leonid Stryzhevskyi',
-      position: 'Back-end develoer & Cloud Architect',
+      position: 'Back-end developer & Cloud Architect',
       image: 'team/leo.jpg',
       links: {
         linkedIn: 'https://www.linkedin.com/in/lganzzzo/'
