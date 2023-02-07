@@ -1,3 +1,5 @@
+import Carousel from 'react-multi-carousel';
+
 import TestimonialItem from './components/TestimonialItem';
 
 function TestimonialSection() {
@@ -34,6 +36,21 @@ function TestimonialSection() {
     }
   ];
 
+  const responsive = {
+    desktop: {
+      breakpoint: {max: 3000, min: 1400},
+      items: 3
+    },
+    tablet: {
+      breakpoint: {max: 1400, min: 768},
+      items: 2
+    },
+    mobile: {
+      breakpoint: {max: 768, min: 0},
+      items: 1
+    }
+  };
+
   return (
     <section className="ftco-section testimony-section bg-light">
       <div className="container-xl">
@@ -50,11 +67,11 @@ function TestimonialSection() {
         </div>
         <div className="row">
           <div className="col-md-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-            <div className="carousel-testimony">
+            <Carousel responsive={responsive} rewindWithAnimation containerClass="testimonials-carousel">
               {testimonials.map(testimonial => {
                 return <TestimonialItem key={testimonial.image} {...testimonial} />;
               })}
-            </div>
+            </Carousel>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import {useEffect} from 'react';
 import Head from 'next/head';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import 'react-multi-carousel/lib/styles.css';
 
 import '../styles/globals.scss';
 

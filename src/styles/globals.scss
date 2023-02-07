@@ -1370,16 +1370,6 @@ textarea.form-control {
   }
 }
 
-.carousel-testimony {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  @media (max-width: 1400px) {
-    justify-content: center;
-  }
-}
-
 .testimony-wrap {
   display: block;
   position: relative;
@@ -1526,6 +1516,17 @@ textarea.form-control {
     }
   }
 }
+
+//override for 'react-multi-carousel' arrows - position outside inner container
+.testimonials-carousel {
+  .react-multiple-carousel__arrow--left {
+    left: 0;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: 0;
+  }
+}
+
 
 //blocks
 .block-20 {
