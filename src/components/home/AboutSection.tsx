@@ -26,10 +26,6 @@ function AboutSection() {
                 development cycle. We utilize pre-defined project templates and basic infrastructure to ensure an
                 efficient start to every project.
               </p>
-              <p>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts of sentences fly into your mouth.
-              </p>
             </div>
           </div>
         </div>

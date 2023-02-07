@@ -9,10 +9,10 @@ function OurWorkSection() {
         <div className="row justify-content-center">
           <div className="col-md-7 text-center heading-section" data-aos="fade-up" data-aos-duration="1000">
             <span className="subheading">Our Portfolio</span>
-            <h2 className="mb-3">Our Work</h2>
+            <h2 className="mb-3">Explore Our Work</h2>
             <p>
-              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
-              blind texts. Separated they live in Bookmarksgrove.
+              Discover the range of innovative and creative solutions we have delivered for our clients. Get a glimpse
+              of our expertise and the quality of our work.
             </p>
           </div>
         </div>
