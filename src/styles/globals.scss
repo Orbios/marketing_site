@@ -1518,7 +1518,7 @@ textarea.form-control {
 }
 
 //override for 'react-multi-carousel' arrows - position outside inner container
-.testimonials-carousel {
+.testimonials-carousel, .choose-us-carousel {
   .react-multiple-carousel__arrow--left {
     left: 0;
   }

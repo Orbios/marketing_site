@@ -1,10 +1,11 @@
+import Carousel from 'react-multi-carousel';
+
 import FEATURES from 'constants/features';
 
 import ChooseItem from './components/ChooseItem';
 import {AiOutlineTeam} from 'react-icons/ai';
 import {HiOutlineTemplate} from 'react-icons/hi';
 import {BsSpeedometer} from 'react-icons/bs';
-import {GrTechnology} from 'react-icons/gr';
 import {ImStack} from 'react-icons/im';
 
 function ChooseSection() {
@@ -35,6 +36,25 @@ function ChooseSection() {
     }
   ];
 
+  const responsive = {
+    largeDesktop: {
+      breakpoint: {max: 3000, min: 1400},
+      items: 4
+    },
+    desktop: {
+      breakpoint: {max: 1400, min: 1200},
+      items: 3
+    },
+    tablet: {
+      breakpoint: {max: 1200, min: 768},
+      items: 2
+    },
+    mobile: {
+      breakpoint: {max: 768, min: 0},
+      items: 1
+    }
+  };
+
   return (
     <section className="img v-section ftco-section bg-light">
       <div className="overlay"></div>
@@ -54,11 +74,11 @@ function ChooseSection() {
           </div>
         </div>
 
-        <div className="row">
+        <Carousel responsive={responsive} rewindWithAnimation containerClass="choose-us-carousel">
           {reasons.map(reason => {
             return <ChooseItem key={reason.title} {...reason} />;
           })}
-        </div>
+        </Carousel>
 
         {FEATURES.DISPLAY_CHOOSE_SECTION_FOOTER && (
           <div

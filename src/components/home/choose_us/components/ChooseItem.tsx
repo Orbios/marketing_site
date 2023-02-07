@@ -1,3 +1,5 @@
+import * as styled from './ChooseItem.styled';
+
 interface Props {
   title: string;
   description: string;
@@ -8,7 +10,7 @@ function ChooseItem({title, description, icon}: Props) {
   const iconToRender = typeof icon === 'string' ? <span className={icon} /> : icon;
 
   return (
-    <div className="col-md-6 col-lg-3 d-flex align-items-stretch">
+    <styled.container className="col-md-6 col-lg-3 d-flex align-items-stretch">
       <div className="services text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
         <div className="icon d-flex align-items-center justify-content-center">{iconToRender}</div>
         <div className="text">
@@ -16,7 +18,7 @@ function ChooseItem({title, description, icon}: Props) {
           <p>{description}</p>
         </div>
       </div>
-    </div>
+    </styled.container>
   );
 }
 
