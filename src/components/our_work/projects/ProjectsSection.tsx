@@ -10,7 +10,7 @@ function ProjectsSection({carousel}: Props) {
   const projects = [
     {
       title: 'Freedom Robotics',
-      slogan: 'Robots Control and Monitoring System',
+      slogan: 'Robots Control and Monitoring',
       description:
         '<b>Freedom Robotics</b> is a control and monitoring system for robots that offers real-time data visualization, WebRTC-enabled video piloting, robot control, and fleet management. The system consists of a thin layer of APIs that provide raw data, and a front-end system that is rich in business logic and real-time data processing. We were involved in creating the initial structure and overall architecture of the front-end system. During the initial phase, the project evolved from a prototype to a finished MVP launched for production.',
       technologies: '<b>Technologies</b>: React, Redux, JS Canvas, WebRTC D3, Data Graphing / Visualisation.',
