@@ -12,7 +12,7 @@ function TestimonialSection() {
         linkedIn: 'https://www.linkedin.com/in/hansclee/'
       },
       feedback:
-        'Erik from orbios has built the front-end our platform from a basic demo to a fully functioning and scalable MVP and then led development of many of the key features we now have in our mature version. He did a great job, where he took initiative when we were small, worked with other developers as we scaled to increase code quality and always had a good balance of development speed and quality. He is very competent in front-end development, ui/ux, react, etc.'
+        'Erik from orbios has built the front-end part of our platform from a basic demo to a fully functioning and scalable MVP and then led development of many of the key features we now have in our mature version. He did a great job, where he took initiative when we were small, worked with other developers as we scaled to increase code quality and always had a good balance of development speed and quality. He is very competent in front-end development, ui/ux, react, etc.'
     },
     {
       person: 'Mike Mack',

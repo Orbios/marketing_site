@@ -22,7 +22,7 @@ function ServicesSection() {
     },
     {
       title: 'UI/UX Design',
-      description: 'Deliver custom <b>figma</b> designs for your project',
+      description: 'Deliver custom <b>Figma</b> designs for your project',
       icon: <RiSlideshowLine />,
       delay: 300
     },
