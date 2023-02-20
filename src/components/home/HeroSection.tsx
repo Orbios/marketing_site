@@ -55,7 +55,7 @@ function HeroSection() {
 
           <div className="col-md-6 col-lg-7 svg d-flex align-items-center">
             <picture id="hero-image-wrapper">
-              <img src="images/hero.svg" className="img-fluid" alt="" />
+              <img src="images/hero-transparent.png" className="img-fluid" alt="" />
             </picture>
           </div>
         </div>
