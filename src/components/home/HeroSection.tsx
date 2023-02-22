@@ -2,9 +2,11 @@ import FEATURES from 'constants/features';
 
 import mailHelper from 'helpers/mailHelper';
 
-import commonData from 'data/common.json';
+import dataService from 'services/dataService';
 
 function HeroSection() {
+  const commonData = dataService.getCommonData();
+
   function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     e.preventDefault();
     mailHelper.sendMail();

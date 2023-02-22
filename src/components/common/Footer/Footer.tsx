@@ -3,12 +3,14 @@ import {FiMail} from 'react-icons/fi';
 
 import FEATURES from 'constants/features';
 
-import commonData from 'data/common.json';
-
 import config from 'config';
 import mailHelper from 'helpers/mailHelper';
 
+import dataService from 'services/dataService';
+
 function Footer() {
+  const commonData = dataService.getCommonData();
+
   function sendEmail(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     e.preventDefault();
     mailHelper.sendMail();

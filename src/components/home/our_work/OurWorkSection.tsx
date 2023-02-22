@@ -1,8 +1,12 @@
 import Link from 'next/link';
 
-import ProjectsSection from 'components/our_work/projects/ProjectsSection';
+import dataService from 'services/dataService';
+
+import ProjectsSection from 'components/common/Projects';
 
 function OurWorkSection() {
+  const projects = dataService.getPortfolioProjects();
+
   return (
     <section className="ftco-section">
       <div className="container-fluid">
@@ -17,7 +21,7 @@ function OurWorkSection() {
           </div>
         </div>
 
-        <ProjectsSection carousel />
+        <ProjectsSection projects={projects} carousel />
 
         <div className="row">
           <div className="col-md-12 text-center">

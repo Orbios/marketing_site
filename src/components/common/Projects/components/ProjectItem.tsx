@@ -1,15 +1,11 @@
 interface Props {
   index: number;
-  title: string;
-  slogan: string;
-  description: string;
-  technologies: string;
-  image: string;
-  url: string;
+  project: Project;
 }
 
-function ProjectItem({index, title, slogan, description, technologies, image, url}: Props) {
-  const backgroundImage = `/images/projects/${image}`;
+function ProjectItem({index, project}: Props) {
+  const {title, slogan, description, technologies, url, imageSrc} = project;
+
   const isEven = index % 2 === 0;
 
   function openLink() {
@@ -27,7 +23,7 @@ function ProjectItem({index, title, slogan, description, technologies, image, ur
         data-aos-duration="1000"
         style={{cursor: 'pointer'}}>
         <picture style={{margin: '10px 0'}} onClick={openLink}>
-          <img src={backgroundImage} className="img-fluid" alt="" />
+          <img src={imageSrc} className="img-fluid" alt="" />
         </picture>
       </div>
     );
