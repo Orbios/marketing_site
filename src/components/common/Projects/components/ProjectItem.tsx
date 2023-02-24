@@ -4,7 +4,7 @@ interface Props {
 }
 
 function ProjectItem({index, project}: Props) {
-  const {title, slogan, description, technologies, url, imageSrc} = project;
+  const {title, slogan, description, technologies, sourceCodeUrl: url, downloadUrl, imageSrc} = project;
 
   const isEven = index % 2 === 0;
 
@@ -40,10 +40,14 @@ function ProjectItem({index, project}: Props) {
           <p dangerouslySetInnerHTML={{__html: description}} />
           <p dangerouslySetInnerHTML={{__html: technologies}} />
           <p>
-            Find out more about{' '}
+            <b>Links: </b>
             <a href={url} target="_blank" rel="noreferrer">
-              {title}
+              Source Code
             </a>
+            {' | '}
+            <a href={downloadUrl} target="_blank" rel="noreferrer">
+              Download
+            </a>{' '}
           </p>
         </div>
       </div>

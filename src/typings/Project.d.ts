@@ -4,5 +4,6 @@ interface Project {
   description: string;
   technologies: string;
   imageSrc: string;
-  url: string;
+  sourceCodeUrl: string;
+  downloadUrl: string;
 }

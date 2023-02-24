@@ -7,7 +7,7 @@ function ExploreSection() {
       <div className="container">
         <div className="row no-gutters slider-text align-items-center justify-content-center">
           <div className="col-md-9 pt-5 text-center">
-            <h1 className="mb-0 bread">Join Our Community Projects</h1>
+            <h1 className="mb-0 bread">Community Projects</h1>
             <p className="breadcrumbs">
               <span className="me-2">
                 <Link href="/" passHref>

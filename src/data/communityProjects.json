@@ -2,11 +2,12 @@
   "projects": [
     {
       "title": "Bookmarks Archive",
-      "slogan": "Organize your web life with ease",
+      "slogan": "Organize your web links with ease",
       "description": "<b>Bookmarks Archive</b> is a desktop application that allows users to store and organize their browser bookmarks. This application was created with the aim of simplifying the process of managing browser bookmarks and making them more accessible. <br/><br/> With Bookmarks Archive, users can easily export bookmarks from their Chrome browser and import them into the application. From there, they can add multiple tags to each bookmark, making it easier to organize them and find the information they need. <br /><br /> For users who want to save data to the cloud Bookmarks Archive offers an easy solution. By moving the bookmarks data file into a folder of a cloud service like Dropbox.",
       "technologies": "<b>Technologies</b>: Electron, Vite, React, Redux Toolkit, TypeScript, Bootstrap, Styled Components",
       "imageSrc": "/images/community_projects/bookmarks_archive.png",
-      "url": "https://github.com/Orbios/bookmarks_archive"
+      "sourceCodeUrl": "https://github.com/Orbios/bookmarks_archive",
+      "downloadUrl": "https://github.com/Orbios/bookmarks_archive/releases/latest"
     }
   ]
 }
