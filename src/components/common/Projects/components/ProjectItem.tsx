@@ -44,10 +44,14 @@ function ProjectItem({index, project}: Props) {
             <a href={url} target="_blank" rel="noreferrer">
               Source Code
             </a>
-            {' | '}
-            <a href={downloadUrl} target="_blank" rel="noreferrer">
-              Download
-            </a>{' '}
+            {downloadUrl && (
+              <>
+                {' | '}
+                <a href={downloadUrl} target="_blank" rel="noreferrer">
+                  Download
+                </a>
+              </>
+            )}
           </p>
         </div>
       </div>
