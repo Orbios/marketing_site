@@ -8,6 +8,15 @@
       "imageSrc": "/images/community_projects/bookmarks_archive.png",
       "sourceCodeUrl": "https://github.com/Orbios/bookmarks_archive",
       "downloadUrl": "https://github.com/Orbios/bookmarks_archive/releases/latest"
+    },
+    {
+      "title": "Contextify",
+      "slogan": "Translate, rephrase, and understand context like never before",
+      "description": "<b>Contextify</b> is an advanced language translation and contextual understanding app that is built on the latest technologies from <b>OpenAI</b> and <b>Azure Speech Service</b>. With Contextify, you can translate any text in any language and understand its meaning in real-time. <br/><br/> The app is built on an Electron platform, which makes it easy to use and accessible across all desktop platforms. To use the app, simply copy the text you want to translate and paste it into the app's text area. Once your text is pasted into the app, you can easily select any word or phrase that you want to understand better. <b>Contextify</b> provides a comprehensive range of information about the selected word or phrase, including its translation, transcription, rephrased context, and usage examples. <br/><br/> Contextify is also equipped with <b>Azure Speech Service</b>, which means that you can use the app to listen to word or sentence in the original language. Simply click the <i>speaker</i> icon next to the word or sentence to hear it pronounced. <br/><br/> The app also allows you to switch between languages effortlessly, making it the perfect tool for anyone who needs to work with multiple languages on a regular basis. With <b>Contextify</b>, breaking down language barriers has never been easier.",
+      "technologies": "<b>Technologies</b>: OpenAI, Azure Speech Service, Electron, Vite, React, Redux Toolkit, TypeScript",
+      "imageSrc": "/images/community_projects/contextify.png",
+      "sourceCodeUrl": "https://github.com/Orbios/contextify_desktop",
+      "downloadUrl": "https://github.com/Orbios/contextify_web/releases"
     }
   ]
 }
