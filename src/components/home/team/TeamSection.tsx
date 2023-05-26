@@ -1,45 +1,76 @@
+import Carousel from 'react-multi-carousel';
 import TeamMember from './components/TeamMember';
 
-function TeamSection() {
-  const teamMembers = [
-    {
-      name: 'Erik Sytnyk',
-      position: 'Founder & Lead Developer',
-      image: 'team/erik.jpg',
-      links: {
-        linkedIn: 'https://www.linkedin.com/in/erik-sytnyk/'
-      },
-      delay: 100
+const teamMembers = [
+  {
+    name: 'Erik Sytnyk',
+    position: 'Founder & Lead Developer',
+    image: 'team/erik.jpg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/erik-sytnyk/'
     },
-    {
-      name: 'Andrey Temchenko',
-      position: 'Lead Full Stack Developer',
-      image: 'team/andrey.jpg',
-      links: {
-        linkedIn: 'https://www.linkedin.com/in/andrew-temchenko-75b8941a2/'
-      },
-      delay: 200
+    delay: 100
+  },
+  {
+    name: 'Andrey Temchenko',
+    position: 'Lead Full Stack Developer',
+    image: 'team/andrey.jpg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/andrew-temchenko-75b8941a2/'
     },
-    {
-      name: 'Leonid Stryzhevskyi',
-      position: 'Back-end developer & Cloud Architect',
-      image: 'team/leo.jpg',
-      links: {
-        linkedIn: 'https://www.linkedin.com/in/lganzzzo/'
-      },
-      delay: 300
+    delay: 200
+  },
+  {
+    name: 'Leonid Stryzhevskyi',
+    position: 'Back-end developer & Cloud Architect',
+    image: 'team/leo.jpg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/lganzzzo/'
     },
-    {
-      name: 'Tetyana Yaburova',
-      position: 'Sales & Marketing',
-      image: 'team/tanya.jpg',
-      links: {
-        linkedIn: 'https://www.linkedin.com/in/tetyana-yaburova-ovcharenko-971b1062/'
-      },
-      delay: 300
-    }
-  ];
+    delay: 300
+  },
+  {
+    name: 'Volodymyr Shchukin',
+    position: 'Front-end developer',
+    image: 'team/oerbyy.jpg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/oerbyy/'
+    },
+    delay: 300
+  },
+  {
+    name: 'Tetyana Yaburova',
+    position: 'Sales & Marketing',
+    image: 'team/tanya.jpg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/tetyana-yaburova-ovcharenko-971b1062/'
+    },
+    delay: 300
+  }
+];
 
+const responsive = {
+  desktop: {
+    breakpoint: {max: 3000, min: 1024},
+    items: 4
+  },
+  tablet: {
+    breakpoint: {max: 1024, min: 464},
+    items: 3
+  },
+  mobile: {
+    breakpoint: {max: 464, min: 0},
+    items: 1
+  }
+};
+
+function renderTeammates() {
+  return teamMembers.map(member => {
+    return <TeamMember key={member.name} {...member} />;
+  });
+}
+
+function TeamSection() {
   return (
     <section className="ftco-section">
       <div className="container">
@@ -55,9 +86,9 @@ function TeamSection() {
         </div>
 
         <div className="row">
-          {teamMembers.map(member => {
-            return <TeamMember key={member.name} {...member} />;
-          })}
+          <Carousel responsive={responsive} rewindWithAnimation>
+            {renderTeammates()}
+          </Carousel>
         </div>
       </div>
     </section>
