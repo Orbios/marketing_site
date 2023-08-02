@@ -46,6 +46,15 @@ const teamMembers = [
       linkedIn: 'https://www.linkedin.com/in/tetyana-yaburova-ovcharenko-971b1062/'
     },
     delay: 300
+  },
+  {
+    name: 'Bogdan Verbenets',
+    position: 'Full Stack Developer',
+    image: 'team/bogdan0x400.jpeg',
+    links: {
+      linkedIn: 'https://www.linkedin.com/in/bogdan0x400/'
+    },
+    delay: 300
   }
 ];
 
