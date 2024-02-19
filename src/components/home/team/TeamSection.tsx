@@ -1,53 +1,8 @@
 import Carousel from 'react-multi-carousel';
-import TeamMember from './components/TeamMember';
 
-const teamMembers = [
-  {
-    name: 'Erik Sytnyk',
-    position: 'Founder & Lead Developer',
-    image: 'team/erik.jpg',
-    links: {
-      linkedIn: 'https://www.linkedin.com/in/erik-sytnyk/'
-    },
-    delay: 100
-  },
-  {
-    name: 'Andrey Temchenko',
-    position: 'Lead Full Stack Developer',
-    image: 'team/andrey.jpg',
-    links: {
-      linkedIn: 'https://www.linkedin.com/in/andrew-temchenko-75b8941a2/'
-    },
-    delay: 200
-  },
-  {
-    name: 'Leonid Stryzhevskyi',
-    position: 'Back-end developer & Cloud Architect',
-    image: 'team/leo.jpg',
-    links: {
-      linkedIn: 'https://www.linkedin.com/in/lganzzzo/'
-    },
-    delay: 300
-  },
-  {
-    name: 'Volodymyr Shchukin',
-    position: 'Front-end developer',
-    image: 'team/oerbyy.jpg',
-    links: {
-      linkedIn: 'https://www.linkedin.com/in/oerbyy/'
-    },
-    delay: 300
-  },
-  {
-    name: 'Tetyana Yaburova',
-    position: 'Sales & Marketing',
-    image: 'team/tanya.jpg',
-    links: {
-      linkedIn: 'https://www.linkedin.com/in/tetyana-yaburova-ovcharenko-971b1062/'
-    },
-    delay: 300
-  }
-];
+import dataService from 'services/dataService';
+
+import TeamMember from './components/TeamMember';
 
 const responsive = {
   desktop: {
@@ -65,8 +20,10 @@ const responsive = {
 };
 
 function renderTeammates() {
+  const teamMembers = dataService.getTeamMembers();
+
   return teamMembers.map(member => {
-    return <TeamMember key={member.name} {...member} />;
+    return <TeamMember key={member.name} member={member} />;
   });
 }
 

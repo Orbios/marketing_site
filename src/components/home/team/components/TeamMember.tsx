@@ -1,12 +1,10 @@
 interface Props {
-  name: string;
-  position: string;
-  image: string;
-  links: {linkedIn: string};
-  delay: number;
+  member: TeamMember;
 }
 
-function TeamMember({name, position, image, links, delay}: Props) {
+function TeamMember({member}: Props) {
+  const {name, position, image, links, delay} = member;
+
   const backgroundImage = `url(images/${image})`;
 
   return (
