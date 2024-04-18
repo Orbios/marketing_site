@@ -34,7 +34,7 @@ function MyApp({Component, pageProps}: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         {/* do not remove google site verification */}
-        <meta name="google-site-verification" content="Z0Zw16SY6l2IjolRaJ8nIM3eDRFAKrYTzI-1_7vv_kM" />
+        <meta name="google-site-verification" content="PBj8uZhTwI77uehg5gL4x7R0baW0tBVyLG3coTcPWds" />
         <meta name="description" content="Orbios marketing site" />
       </Head>
 
