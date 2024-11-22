@@ -4,7 +4,7 @@ const config = {
     nabatik: 'https://nabatik-map-demo.herokuapp.com/'
   },
   socialMedia: {
-    email: 'orbios.agency@gmail.com'
+    email: 'contact@orbios.io'
   },
   hiddenTeamMembers: ['Leonid Stryzhevskyi', 'Volodymyr Shchukin']
 };
