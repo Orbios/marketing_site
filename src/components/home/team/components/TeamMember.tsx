@@ -12,11 +12,13 @@ function TeamMember({member}: Props) {
       <div className="team-wrap">
         <div className="img" style={{backgroundImage}}>
           <ul className="ftco-social">
-            <li>
-              <a href={links.linkedIn} target="_blank" rel="noreferrer">
-                <span className="fa fa-linkedin"></span>
-              </a>
-            </li>
+            {links.linkedIn && (
+              <li>
+                <a href={links.linkedIn} target="_blank" rel="noreferrer">
+                  <span className="fa fa-linkedin"></span>
+                </a>
+              </li>
+            )}
           </ul>
         </div>
         <div className="text">
