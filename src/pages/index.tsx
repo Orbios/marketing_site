@@ -10,6 +10,8 @@ import OurWorkSection from 'components/home/our_work/OurWorkSection';
 import TestimonialSection from 'components/home/testimonial/TestimonialSection';
 import ChooseSection from 'components/home/choose_us/ChooseSection';
 
+const TESTIMONIAL_SECTION_VISIBLE = false;
+
 const Home: NextPage = () => {
   const router = useRouter();
 
@@ -31,7 +33,7 @@ const Home: NextPage = () => {
         <hr /> <OurWorkSection />
       </>
 
-      <TestimonialSection />
+      {TESTIMONIAL_SECTION_VISIBLE && <TestimonialSection />}
 
       <ChooseSection />
     </Layout>
