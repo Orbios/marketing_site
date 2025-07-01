@@ -6,7 +6,7 @@ const config = {
   socialMedia: {
     email: 'contact@orbios.io'
   },
-  hiddenTeamMembers: ['Leonid Stryzhevskyi', 'Volodymyr Shchukin', 'Tetyana Yaburova']
+  hiddenTeamMembers: ['Leonid Stryzhevskyi', 'Volodymyr Shchukin', 'Tetyana Yaburova', 'Mykola Platonov']
 };
 
 export default config;

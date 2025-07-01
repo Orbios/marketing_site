@@ -55,6 +55,15 @@
       "delay": 300
     },
     {
+      "name": "Kateryna Rudenko",
+      "position": "UX/UI Designer",
+      "image": "team/kateryna.jpg",
+      "links": {
+        "linkedIn": "https://www.linkedin.com/in/kateryna-rudenko-/"
+      },
+      "delay": 300
+    },
+    {
       "name": "Olya Kyrylenko",
       "position": "Operations Manager",
       "image": "team/olya.jpg",
